@@ -11,7 +11,7 @@ use Gtk3 -init;
 
 
 BEGIN {
-    use_ok('Gtk3::Notify');
+    use_ok('Gtk3::Notify', -init, "test_app");
 }
 
 
