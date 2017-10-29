@@ -16,7 +16,7 @@ BEGIN {
 
 
 sub main {
-    my $view = Gtk3::Notify::Notification->new();
+    my $view = Gtk3::Notify::Notification->new("Title", "test", undef);
     isa_ok($view, 'Gtk3::Notify::Notification');
     return 0;
 }
