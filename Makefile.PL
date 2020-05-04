@@ -22,10 +22,16 @@ sub main {
 		},
 
 		META_MERGE => {
+			'meta-spec' => { version => 2 },
 			resources => {
 				homepage    => 'https://github.com/soig/Gtk3-Notify',
 				bucktracker => 'https://github.com/soig/Gtk3-Notify/issues',
-				repository  => 'https://github.com/soig/Gtk3-Notify',
+			},
+
+			repository  => {
+				type => 'git',
+				url  => 'https://github.com/soig/Gtk3-Notify.git',
+				web  => 'https://github.com/soig/Gtk3-Notify',
 			},
 		},
 	);
