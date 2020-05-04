@@ -1,6 +1,8 @@
 Revision history for Gtk3::Notify.pm
 
 
+0.03
+
 * Add more tests
 * Add repository details (links, ...) for CPAN
 * Bailout early if Notify typelib isn't available
