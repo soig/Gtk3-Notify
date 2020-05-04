@@ -7,10 +7,20 @@ use Test::More 'no_plan';
 use Data::Dumper;
 
 
-
-BEGIN {
-    use_ok('Gtk3::Notify');
+BEGIN { require Gtk3::Notify; }
+unless (eval { Gtk3::Notify->import; 1 }) {
+  my $error = $@;
+  if (eval { $error->isa ('Glib::Error') &&
+             $error->domain eq 'g-irepository-error-quark'})
+  {
+    BAIL_OUT ("OS unsupported: $error");
+  } else {
+    BAIL_OUT ("Cannot load Gtk3::Notify: $error");
+  }
 }
+
+
+use_ok('Gtk3::Notify');
 
 is(Gtk3::Notify::is_initted(), '', "Is not initialized");
 
