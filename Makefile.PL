@@ -14,7 +14,7 @@ sub main {
 		NAME          => 'Gtk3::Notify',
 		VERSION_FROM  => File::Spec->catfile('lib', 'Gtk3', 'Notify.pm'),
 		ABSTRACT_FROM => File::Spec->catfile('lib', 'Gtk3', 'Notify.pm'),
-		LICENSE       => 'perl, lgpl',
+		LICENSE       => 'lgpl',
 
 		PREREQ_PM     => {
 			'Glib::Object::Introspection' => 0,
