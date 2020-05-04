@@ -23,9 +23,9 @@ sub main {
 
 		META_MERGE => {
 			resources => {
-				homepage    => 'https://github.com/potyl/perl-Gtk3-Notify',
-				bucktracker => 'https://github.com/potyl/perl-Gtk3-Notify/issues',
-				repository  => 'https://github.com/potyl/perl-Gtk3-Notify',
+				homepage    => 'https://github.com/soig/Gtk3-Notify',
+				bucktracker => 'https://github.com/soig/Gtk3-Notify/issues',
+				repository  => 'https://github.com/soig/Gtk3-Notify',
 			},
 		},
 	);
