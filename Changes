@@ -1,5 +1,8 @@
 Revision history for Gtk3::Notify.pm
 
+
+* Skip tests that need a DISPLAY when there's not (CPAN RT#127946)
+
 0.02
 
 * Add tests
