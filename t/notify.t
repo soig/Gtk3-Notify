@@ -7,8 +7,6 @@ use Test::More tests => 2;
 use Data::Dumper;
 
 
-use Gtk3 -init;
-
 
 BEGIN {
     use_ok('Gtk3::Notify', -init, "test_app");
