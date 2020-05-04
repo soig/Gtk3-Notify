@@ -33,6 +33,7 @@ sub main {
 				url  => 'https://github.com/soig/Gtk3-Notify.git',
 				web  => 'https://github.com/soig/Gtk3-Notify',
 			},
+			release_status => 'stable',
 		},
 	);
 	WriteMakefile(@args);
